@@ -1,0 +1,46 @@
+GRAVITY BREAKER — v2 NEON COURSE / VARIED HAZARDS / STAMINA BOOST
+
+This update builds on the tested 1500 m attack-telegraph build. It keeps the
+existing menu, audio, scoring, lives, checkpoints, gravity flip, projectiles,
+telegraph warnings, victory/game-over flows, and saved best score.
+
+VISUAL COURSE UPDATE
+- Replaced the plain single-color surface treatment with alternating metallic
+  cyan/indigo panels across the floor, ceiling, and both walls.
+- Increased the visibility and thickness of the neon graph lines.
+- Added cyan/purple wall-side light ribs every 30 m.
+- Darkened and metallic-treated the base tunnel materials, and increased glow.
+- Panel rendering uses MultiMesh batches to keep the draw-call count low.
+
+OBSTACLE UPDATE
+- Spikes grow from 1.35x near the beginning to 2.25x near the finish.
+- Three out of every four laser gates now move in two axes.
+- Moving lasers use two independent axes: floor/ceiling gates slide in X and
+  bob in Y; wall gates slide in Y and drift in X.
+- Added 12 special hazards from 245 m onward, spaced throughout the course:
+  * Oversized moving piston crushers (about 2.8 m wide and tall).
+  * Rotating three-blade fans.
+  * Floating rotating energy mines.
+
+SPEED / STAMINA UPDATE
+- Hold W to boost from the normal 6 units/s toward 12 units/s (2x speed).
+- Boost drains stamina; a full tank supplies about 4.3 seconds of boost.
+- Release W to recover stamina at 18 points/s; boost unlocks again at 30%.
+- Hold S to brake toward 2.5 units/s.
+- Shift and Ctrl remain alternate boost/brake keys.
+- HUD now shows speed and a live stamina bar.
+
+CONTROLS
+A / D       Strafe
+SPACE       Jump
+Q           Flip gravity
+W           Boost (stamina-limited)
+S           Brake
+SHIFT       Alternate boost
+CTRL        Alternate brake
+
+TESTING NOTE
+The files were statically checked and the ZIP archive was integrity-tested.
+A Godot 4.7 executable is not available in the build environment, so this
+version has not been launched or play-tested here. Open the project in Godot
+4.7 and verify the visuals, collisions, motion, and controls in-engine.

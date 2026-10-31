@@ -1,0 +1,15 @@
+GRAVITY BREAKER — ENEMY ATTACK TELEGRAPH UPDATE
+
+Added a readable 0.62-second warning before each enemy projectile pattern.
+
+- A cyan target ring appears on the active running surface, eight metres ahead.
+- The warning marks the exact lane(s) used by the upcoming attack.
+- Single-shot, three-shot burst, and five-lane spread attacks each have distinct HUD text.
+- A short original charge tone plays at warning start, with a subtle cyan screen pulse.
+- The warning phase is included in the existing projectile cadence; the difficulty-ramp
+  attack interval and projectile speed endpoints are unchanged.
+- The warning UI/markers are cleared on hit, respawn, restart, main-menu return, and finish.
+
+The existing menu, HUD score/lives, movement, gravity, checkpoints, score persistence,
+projectile visuals/collision, attack patterns, music, existing sound effects, main scene,
+and Compatibility renderer settings were retained.

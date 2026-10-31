@@ -1,0 +1,27 @@
+GRAVITY BREAKER v9 — Progressive Run Speed
+
+CHANGES
+- Normal auto-run cruise speed now increases continuously with course progress.
+- Cruise speed starts at 6.0 units/s and reaches 8.0 units/s at the 1500 m finish.
+- Expected cruise pace at sector markers: 0 m = 6.0, 300 m = 6.4, 600 m = 6.8,
+  900 m = 7.2, 1200 m = 7.6, 1500 m = 8.0 units/s.
+- Hold W (or Shift) to retain the stamina-based boost toward 12.0 units/s.
+  This is 2x the starting cruise pace and 1.5x the final cruise pace.
+- Hold S (or Ctrl) to brake toward the existing 2.5 units/s minimum.
+- Releasing boost returns smoothly to the cruise speed appropriate to the
+  player's current distance, rather than always returning to 6.0.
+- Respawning at a checkpoint resumes at that checkpoint's appropriate cruise
+  pace. Restarting a fresh run still starts at 6.0 units/s.
+- Updated the start-menu instructions and startup diagnostic message.
+
+PRESERVED
+- Five-sector progression, sector announcements and gates.
+- 1500 m track, hazards, lasers, crushers, fans, mines and projectiles.
+- Stamina, collectibles, gravity flip cooldown, checkpoints, scoring, lives,
+  menus, audio, victory/game-over flow and saved best score.
+
+TESTING NOTE
+- ZIP integrity and source-level consistency checks were performed.
+- Godot 4.7.2 is not installed in this build environment, so an engine launch,
+  GDScript parser run, collision test and gameplay balance test remain to be
+  performed in the user's Godot editor.

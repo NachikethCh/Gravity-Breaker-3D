@@ -1,0 +1,24 @@
+GRAVITY BREAKER v12 — CAMERA & PLAYER EXPERIENCE POLISH
+
+CAMERA VISIBILITY
+- Replaced the fixed 6 m camera offset with a gravity-aware third-person chase camera.
+- Camera now sits 10.5 m behind and 2.45 m above the active surface.
+- Look-ahead grows from 22 m to 36 m as running speed rises/boost is used.
+- Field of view adapts smoothly from 82 to 89 degrees while boosting.
+- Camera orientation and offset rotate with gravity across floor, walls and ceiling.
+- Respawns snap the camera to the current checkpoint with the new framing.
+
+GUARDIAN OBJECTIVE READABILITY
+- Guardian cores and target rings enlarged for visibility.
+- Core glow/light slightly strengthened without changing tunnel lighting.
+- Guardian HUD now reports the distance to the next core.
+
+PLAYER EXPERIENCE
+- Added dedicated How to Play and Credits pages to the title menu.
+- Added How to Play access from the pause menu.
+- Shortened the title-page text and made gameplay HUD information wrap across two lines.
+- Shifted Guardian/attack-warning UI lower to reduce overlap with the status HUD.
+- Existing gameplay logic, scoring, boss phases, projectiles, speed, stamina, checkpoints and audio assets are retained.
+
+RELEASE STATUS
+- This is still a test build. A Godot 4.7.2 import/launch, camera playtest on all four surfaces, Windows/Linux export, performance pass and audio redistribution clearance are required before public release.

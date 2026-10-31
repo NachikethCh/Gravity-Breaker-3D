@@ -1,0 +1,52 @@
+GRAVITY BREAKER v8 — SECTOR PROGRESSION UPDATE
+
+Base: v7 Dark Graph Grid. The existing tunnel/grid palette, gravity controls,
+2-second gravity cooldown, stamina boost/braking, player model, menus, audio,
+projectile telegraphs, scoring persistence, lives and 1500 m track are retained.
+
+1. Five themed sectors, each 300 m long:
+   - 000–300 m: Training Zone
+   - 300–600 m: Laser Matrix
+   - 600–900 m: Mechanical Sector
+   - 900–1200 m: Reactor Core
+   - 1200–1500 m: Final Gauntlet
+
+2. Sector presentation:
+   - Five coloured, non-collidable entry frames are generated under Level.
+   - A sector announcement and short subtitle appear at each transition.
+   - The HUD identifies the current sector.
+   - Existing checkpoints remain at 300, 600, 900 and 1200 m.
+
+3. Sector-specific hazard pacing:
+   - Training: fewer early spikes and laser gates with more space to learn.
+   - Laser Matrix: tighter laser spacing and faster two-axis gate movement.
+   - Mechanical Sector: denser moving spikes and a sequence of crushers/fans.
+   - Reactor Core: energy mines, machinery and faster enemy attacks.
+   - Final Gauntlet: denser moving lasers, larger/moving hazards and combined
+     crusher/fan/mine patterns.
+
+4. Zone-based enemy projectile ramp:
+   - Training begins at a slower cadence and speed.
+   - Interval and speed step up at every sector boundary and ramp further
+     inside each sector.
+   - Existing single-shot, three-shot burst, five-lane spread and warning
+     telegraphs remain active.
+
+5. Energy shards:
+   - Five rotating collectible shards, one per sector, appear on different
+     running surfaces.
+   - Collecting a shard restores up to 30 stamina and awards 250 bonus points.
+   - Bonus points are tracked separately so they survive score recomputation.
+   - Collected shards stay hidden after checkpoint respawns, but return on a
+     full retry/restart.
+
+6. Final sequence:
+   - The last sector combines all three special hazard families with a denser
+     laser rhythm before the existing finish marker at 1500 m.
+   - Victory summary now confirms that all five sectors were cleared.
+
+Validation notes:
+- Source-level checks and ZIP integrity checks were performed.
+- The container does not have Godot installed, so no Godot 4.7.2 headless parse,
+  scene import, rendering or in-engine collision playtest could be performed.
+- Please test the full run in Godot before replacing the previous v7 backup.

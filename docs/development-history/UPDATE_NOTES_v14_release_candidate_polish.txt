@@ -1,0 +1,23 @@
+GRAVITY BREAKER v14 — Release-Candidate Polish
+
+Based on the user-tested v13 project.
+
+Camera refinement requested after v13:
+- Camera distance: 8.3 m -> 7.5 m.
+- Base FOV: 76.0 -> 73.5 degrees.
+- Boost FOV: 83.5 -> 81.0 degrees.
+- Look-ahead: 22–34 m -> 23–36 m, retaining more hazard preview as framing tightens.
+
+Release-preparation work:
+- Project description and Windows product/file version updated to 0.14.0.
+- Added player-facing quick-start guide.
+- Added Linux/macOS shell and Windows batch export helpers.
+- Added a Python standard-library packager for separate private QA ZIPs, including player quick-start and credits.
+- Added a v14 release-candidate test guide and explicit release gates.
+- Updated README with current camera values and build instructions.
+
+No gameplay, movement, hazards, gravity, boss, scoring, checkpoint, menu, audio, or save-system logic was intentionally changed. Existing v13 settings/pause/credits/how-to-play functionality is preserved.
+
+Validation limitation:
+- Archive/static checks can be completed here. Godot 4.7.2, matching export templates, actual runtime QA, and platform exports are not available in this environment.
+- The eight WAV files still require ownership/redistribution confirmation before public release.

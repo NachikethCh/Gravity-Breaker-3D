@@ -1,0 +1,20 @@
+GRAVITY BREAKER v6 — GRID CREATION BOOTSTRAP FIX
+
+DIAGNOSIS FROM USER'S REMOTE SCENE TREE
+- v5 showed GeneratedHazards under Main/Level but no GeneratedRunnerMarkings node.
+- This confirms the grid generator had not attached its root node to the active Level; this was not a brightness or camera issue.
+
+FIX
+- Grid creation is now deferred until the scene hierarchy has entered the SceneTree.
+- The grid generator resolves Main/Level from get_tree().current_scene, with the Player parent as fallback.
+- The deferred obstacle setup also invokes the same idempotent grid-creation helper using the Level node it already resolved successfully.
+- Runtime diagnostics print GRAPH GRID READY and report the four expected face meshes.
+- If Level cannot be resolved or the four meshes are not created, the game reports a clear push_error instead of failing silently.
+
+PRESERVED
+- Grid geometry layout and material colours from v5 are unchanged.
+- Gravity cooldown and HUD, 1500 m track, hazards, movement, stamina, projectiles, menus, audio, score and checkpoints are unchanged.
+
+VALIDATION
+- ZIP integrity and static source checks performed.
+- Godot runtime is not installed in this environment; launch and rendering must still be verified in Godot 4.7.2.

@@ -1,0 +1,22 @@
+GRAVITY BREAKER v5 — GEOMETRY GRID + GRAVITY RECHARGE
+
+VISUAL CHANGE
+- Replaced the v4 repeating texture overlay with four actual ArrayMesh grid surfaces.
+- The grid is built from thin rectangular mesh strips over the floor, ceiling, left wall, and right wall.
+- 1 m subdivisions form the graph-paper pattern; 2 m lines are stronger and every 10 m has a restrained blue-violet accent.
+- Existing tunnel surface colours, scene lighting, and glow settings were not increased or brightened in this update.
+- The four surfaces are batched as one mesh each rather than one node per grid line.
+
+GAMEPLAY CHANGE
+- Q gravity flip now has a 2.0 second cooldown after a successful flip.
+- The cooldown is enforced inside the flip handler, not just shown in the HUD.
+- The HUD displays GRAVITY RECHARGING and a refill bar; a premature Q press briefly displays GRAVITY LOCKED without stopping movement or replaying the flip effects.
+- Cooldown resets on respawn/restart.
+
+PRESERVED
+- 1500 m course, checkpoints, hazards and their movement, projectiles and attack telegraphs, boost/brake stamina, menus, lives, scoring, saved best score, audio, gravity movement and camera rotation remain based on v4.
+
+VALIDATION
+- ZIP integrity checked.
+- Static source checks performed for balanced delimiters, duplicate function definitions, expected call sites, and preserved project files.
+- Godot 4.7.2 was not available in this environment, so this build has not been launched or runtime-tested in the engine. Test this ZIP in a separate folder before replacing the working v4 project.

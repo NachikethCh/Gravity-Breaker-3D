@@ -1,0 +1,27 @@
+GRAVITY BREAKER — Audio & Visual Feedback Restoration
+
+This update keeps the existing game structure and gameplay logic, including the title screen, PLAY/QUIT buttons, game-over and victory screens, HUD, movement, gravity switching, hazards, checkpoints, score saving, and the three enemy projectile patterns.
+
+Restored audio (assets/audio/):
+- ambient_loop.wav — background loop (starts when the scene loads)
+- gravity_flip.wav — Q gravity switch
+- projectile.wav — enemy projectile shot
+- damage.wav — player hit
+- game_over.wav — final life lost
+- checkpoint.wav — checkpoint reached
+- victory.wav — finish reached
+
+Restored/added visual feedback:
+- Expanding cyan ring + brief blue screen flash on gravity flip
+- Expanding red ring + red screen flash when hit
+- Green ring + green screen flash at checkpoints
+- Green finish pulse/flash on victory
+- Enabled WorldEnvironment glow for the existing emissive cyan/orange/red materials
+
+Installation options:
+1. Safest: extract this archive to a NEW folder, then open its project.godot in Godot.
+2. To patch an existing copy: back it up first, replace scenes/player.gd and scenes/main.tscn, and keep the complete assets/audio folder from this archive.
+
+The archive intentionally omits the generated .godot editor/import cache. Godot will rebuild that cache when the project is opened.
+
+Runtime validation note: the source was statically inspected and the archive integrity checked, but it was not executed in Godot in this environment.

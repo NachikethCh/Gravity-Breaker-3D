@@ -1,0 +1,29 @@
+GRAVITY BREAKER — v7 visual refinement
+========================================
+
+Base project: v6_grid_bootstrap_fix
+
+What changed:
+- Kept the working v6 grid-generation bootstrap and its GeneratedRunnerMarkings root.
+- Changed the procedural grid from 1 m spacing to clear 2 m x 2 m cells.
+- Kept minor grid lines subtle; added stronger cyan lines every five cells (10 m)
+  and muted violet accents every ten cells (20 m).
+- Tuned line widths and colours down to reduce the bright wireframe/cage appearance.
+- Darkened the four tunnel surface materials to a restrained navy / blue-grey palette.
+- Disabled emission on the large tunnel surfaces so the walls and floor do not self-illuminate.
+- Moderately reduced ambient lighting, directional light energy, and global glow/bloom while retaining enough fill light to keep the player and panel faces readable.
+- Left obstacle materials and obstacle/gameplay logic unchanged.
+- Preserved the 1500 m course, stamina boost/brake, 2 s gravity-flip cooldown,
+  menus, audio, scoring, checkpoints, lives, enemy projectiles, and attack telegraphs.
+
+Expected appearance:
+A dark metallic training shaft with readable rectangular graph cells. The grid should
+be visible but not overpower the player or hazard silhouettes. Cyan is used for the
+10 m major divisions; low-contrast lines define the 2 m cells; violet accents mark
+20 m sections.
+
+Validation:
+- ZIP archive integrity checked after packaging.
+- Source changes inspected and checked for expected constants / material settings.
+- Godot 4.7.2 executable was not available in the build environment; no in-engine
+  rendering or collision test is claimed. Test this build in a separate folder first.

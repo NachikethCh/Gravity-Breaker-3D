@@ -1,0 +1,10 @@
+GRAVITY BREAKER v13 — Subtle Camera Zoom
+
+This update is based on the tested v12 project. It makes a small camera-only adjustment:
+- Chase camera distance: 9.0 m -> 8.3 m (slightly closer).
+- Base camera FOV: 78 degrees -> 76 degrees (mild zoom-in).
+- Boost FOV: 85 degrees -> 83.5 degrees (keeps the boost effect but avoids excessive widening).
+
+The camera remains gravity-aware, retains its speed-sensitive look-ahead, and continues to widen gently during boost. No movement, gravity, stamina, hazard, boss, score, checkpoint, menu, or save-system logic was changed.
+
+Testing note: ZIP integrity and source configuration are checked, but the final camera feel must be confirmed in Godot 4.7.2.

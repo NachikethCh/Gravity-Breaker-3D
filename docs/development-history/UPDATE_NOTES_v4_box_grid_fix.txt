@@ -1,0 +1,9 @@
+GRAVITY BREAKER v4 — REAL BOX GRID FIX
+
+This update replaces the previous dynamically generated MultiMesh panel/grid markings with four continuous QuadMesh overlays using a repeating 2 m x 2 m tile texture. The grid is therefore drawn directly over the floor, ceiling, and both walls, instead of relying on the old MultiMesh batches.
+
+Visual tuning: moderate dark blue panel fill, visible but restrained cyan cell edges, faint 0.5 m sub-grid lines, small violet panel accents, and reduced ambient/directional light and glow to avoid a washed-out tunnel.
+
+Gameplay logic is retained from v3: 1500 m course, 4 checkpoints, stamina boost/brake controls, progressive hazards, moving lasers, crushers, rotors, mines, enemy projectiles and telegraphs, UI, audio, scoring, lives, save data, victory and game-over flows.
+
+Test in Godot 4.7.2 using the GL Compatibility renderer. This build was checked statically and the ZIP was integrity-tested; no Godot engine runtime was available here for an actual in-engine launch.

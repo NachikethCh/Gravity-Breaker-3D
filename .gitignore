@@ -1,0 +1,15 @@
+# Godot generated editor/import cache
+.godot/
+
+# Exported game builds
+build/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

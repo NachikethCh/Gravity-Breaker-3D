@@ -1,0 +1,41 @@
+GRAVITY BREAKER v11 — TOWER GUARDIAN + RELEASE PREPARATION
+
+Built on the user's confirmed working v10 progressive-speed project.
+
+New gameplay:
+- Procedural Tower Guardian encounter begins around 1280 m.
+- Guardian visual assembled from original procedural mesh parts.
+- Three exposed core targets are positioned on the floor, left wall and ceiling.
+- Each core reduces Guardian integrity, grants +750 score and restores 18 stamina.
+- Boss health and the next required surface are displayed in the HUD.
+- The Guardian has a subtle idle hover/turn and phase announcements explain the next core target.
+- Boss HUD now names the next core surface and shows the required A+Q direction for wall/ceiling targets.
+- Controls explain A+Q to advance floor → left wall → ceiling, and D+Q to reverse.
+- Final-sector projectiles become more frequent and faster as Guardian integrity falls.
+- Reaching 1500 m before defeating the Guardian costs one life and returns the player to the last checkpoint; remaining cores persist.
+- Defeating all three cores unlocks the normal 1500 m finish and victory screen.
+
+Player-experience polish:
+- ESC pause/resume overlay.
+- Settings screen with master volume, music volume and fullscreen toggle.
+- Settings persist with best score in user://gravity_breaker_save.cfg.
+- Audio players, the run AnimationPlayer and feedback tweens stop while paused.
+- Custom original project icon in SVG, PNG and Windows ICO formats.
+
+Release preparation:
+- Windows Desktop and Linux/X11 64-bit export presets added.
+- README with export instructions and player controls.
+- CREDITS.md includes known Sketchfab model attribution and CC BY 4.0.
+- ASSET_LICENSE_AUDIT.md flags audio provenance as unresolved because the WAV files contain no embedded attribution metadata.
+- RELEASE_CHECKLIST.md tracks full QA, export and publication work.
+
+Preserved from v10:
+- 1500 m course and all five sectors.
+- Existing grid, sector gates, obstacles, energy shards and projectiles.
+- 9-to-14 units/s cruise progression, 22 units/s boost cap, 4 units/s brake floor.
+- Stamina system, 2-second gravity cooldown, scoring, checkpoints, lives, high score, menus and audio.
+
+Verification limitation:
+- ZIP integrity and static source checks were performed.
+- No Godot 4.7.x runtime or matching export templates were available in the build environment.
+- The boss collision flow, pause UX, settings persistence and actual Windows/Linux export must be tested in Godot before public release.

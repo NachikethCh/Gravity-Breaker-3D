@@ -1,0 +1,18 @@
+GRAVITY BREAKER — 1500 m COURSE + GRID ENVIRONMENT + SPEED CONTROL
+
+Changes in this update:
+- Track finish extended from 240 m to 1500 m; floor, ceiling, and side-wall collision/visual meshes extended to match.
+- Neon graph/grid lines now run along all four surfaces for the full course.
+- Checkpoints moved to 300, 600, 900, and 1200 m.
+- Procedural spike and laser hazards continue through the extended course.
+- Hazard size increases with distance: spikes scale up gradually and laser beams become thicker.
+- Hold SHIFT to accelerate (up to 9.0 units/s); hold CTRL to brake (down to 3.5 units/s). Releasing both returns smoothly to 6.0 units/s.
+- HUD displays current speed; main menu and HUD show the new controls and 1500 m finish.
+
+INSTALL/TEST SAFELY
+1. Extract this ZIP to a NEW folder and open project.godot.
+2. Let Godot import assets, then press F5.
+3. Check menu/audio/effects, all four gravity surfaces, speed controls, grid visibility, checkpoint respawn, hazard progression, and finish.
+4. Keep the previously tested project unchanged as backup.
+
+No in-engine playtest was available while preparing this patch. Please validate in Godot before replacing your known-good copy.

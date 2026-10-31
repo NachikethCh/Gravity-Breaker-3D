@@ -1,0 +1,13 @@
+GRAVITY BREAKER v0.15.0 — Fullscreen and camera framing
+
+- First launch after v0.15 defaults to fullscreen.
+- Existing save files are migrated once: fullscreen is enabled and a migration flag is stored. After that, the player's Settings choice is respected.
+- Reset Settings now restores fullscreen as the default.
+- Camera moves 0.5 m closer (7.0 m behind the player).
+- Camera FOV tightens slightly: 71.5 degrees normal, 79.5 degrees during boost.
+- Speed-based look-ahead is retained to preserve hazard visibility.
+- Verbose moving-hazard setup messages are limited to debug builds.
+- Duplicate UIDs were removed from the two inactive legacy scene copies that caused startup/export warnings. Active scene UIDs are unchanged.
+- Product metadata and documentation updated to 0.15.0.
+
+No movement, stamina, gravity, hazard, score, checkpoint, Guardian, or audio gameplay logic was intentionally changed.

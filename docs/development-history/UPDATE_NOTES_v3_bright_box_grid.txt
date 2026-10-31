@@ -1,0 +1,19 @@
+GRAVITY BREAKER — v3 BRIGHT BOX-GRID ENVIRONMENT
+
+This is a visual-only correction on top of v2. Gameplay and hazard scripts are unchanged.
+
+VISUAL CHANGES
+- Raised the brightness and colour contrast of the four shaft base surfaces.
+- Increased ambient illumination and slightly raised directional light energy.
+- Replaced faint sparse markings with a real rectangular 2 m graph grid on the floor, ceiling, left wall, and right wall.
+- Grid lines use thick, unshaded cyan with violet accent lines so they stay visible at a distance and on every gravity surface.
+- Expanded alternating cyan/indigo modular tile plates to 9.75 m with narrow seams.
+- Retained repeating bright wall ribs for depth and scale.
+- Batched grid geometry with MultiMesh instances to limit draw calls.
+
+UNCHANGED
+- 1500 m course, checkpoints, hazards, projectiles, telegraphs, stamina boost/brake, scoring, audio, menus, respawn, victory, and game-over systems are unchanged.
+
+TESTING
+- Archive integrity checked.
+- No Godot executable is available in the build environment, so this has not been launched in-engine.

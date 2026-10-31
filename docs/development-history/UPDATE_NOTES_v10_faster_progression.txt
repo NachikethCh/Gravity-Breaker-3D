@@ -1,0 +1,32 @@
+GRAVITY BREAKER v10 — FASTER PROGRESSIVE SPEED
+
+Built on the v9 progressive-speed / v8 sector-progression project.
+
+Speed tuning:
+- Normal auto-run increases continuously from 9.0 to 14.0 units/s over 1500 m.
+- W / Shift boost scales with current cruise speed using a 1.65x multiplier,
+  capped at 22.0 units/s.
+- S / Ctrl braking now bottoms out at 4.0 units/s.
+- Boost acceleration: 11.0 units/s^2.
+- Braking deceleration: 13.0 units/s^2.
+- Return-to-cruise response: 7.0 units/s^2.
+- Lateral strafe speed: 6.0 units/s.
+- Run animation speed scales with movement speed (0.65x to 2.0x).
+
+Preserved:
+- Five sector progression and announcements.
+- Existing hazards, projectiles, checkpoints, stamina and energy shards.
+- Two-second gravity-flip cooldown.
+- Menus, audio, scoring, lives, victory and game-over flow.
+
+Controls remain:
+- A / D: strafe
+- SPACE: jump
+- Q: gravity flip (2-second cooldown)
+- W or SHIFT: boost while stamina remains
+- S or CTRL: brake
+
+Testing note:
+- ZIP archive integrity was checked.
+- Static source checks were performed.
+- An actual Godot 4.7.2 engine launch / gameplay test was not available in the build environment.
